@@ -51,16 +51,22 @@ class SearchViewController: UIViewController {
     
     private func setupSearchBar() {
         //Setup searchbard ui
-        searchBar.layer.backgroundColor = .none
-        searchBar.layer.borderWidth = .zero
-        searchBar.searchTextField.attributedPlaceholder = NSAttributedString(string: "What are you looking for?", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 24, weight: .ultraLight)])
+        searchBar.searchTextField.attributedPlaceholder = NSAttributedString(string: "What are you looking for?", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont.systemFont(ofSize: 24, weight: .ultraLight), NSAttributedString.Key.backgroundColor: UIColor.clear])
+        
+        //Make the magnifier color white
         searchBar.searchTextField.leftView?.tintColor = .white
         
+        //Add a line/border to the bottom of the searchbar
         let frame = CGRect(x: 10, y: searchBar.frame.size.height - 10, width: searchBar.frame.size.width - 20, height: 1)
         
         let border = UIView(frame: frame)
         border.backgroundColor = UIColor.white
         searchBar.addSubview(border)
     }
+    
+    //MARK: - Actions
+    @IBAction func airPlay(_ sender: UIButton) {
+    }
+    
 
 }

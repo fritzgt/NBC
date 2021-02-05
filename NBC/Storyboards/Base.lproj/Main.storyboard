@@ -62,16 +62,19 @@
                                             <constraint firstAttribute="width" constant="40" id="bEL-ZI-Jer"/>
                                         </constraints>
                                         <state key="normal" image="airplayvideo" catalog="system"/>
+                                        <connections>
+                                            <action selector="airPlay:" destination="8QJ-pw-zPu" eventType="touchUpInside" id="bKh-jC-UOM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="What are you looking for?" translatesAutoresizingMaskIntoConstraints="NO" id="Zz2-TR-Y4U">
-                                <rect key="frame" x="0.0" y="84" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="56"/>
                                 <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JPG-97-T9B">
-                                <rect key="frame" x="0.0" y="140" width="414" height="690"/>
+                                <rect key="frame" x="0.0" y="160" width="414" height="670"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -101,7 +104,7 @@
                             <constraint firstItem="VPY-aT-Jka" firstAttribute="trailing" secondItem="JPG-97-T9B" secondAttribute="trailing" id="jrk-L0-EUK"/>
                             <constraint firstItem="VPY-aT-Jka" firstAttribute="top" secondItem="JPG-97-T9B" secondAttribute="bottom" id="kFY-pE-b0J"/>
                             <constraint firstItem="JPG-97-T9B" firstAttribute="trailing" secondItem="nAU-P7-0qt" secondAttribute="trailing" id="n4U-fr-aS7"/>
-                            <constraint firstItem="Zz2-TR-Y4U" firstAttribute="top" secondItem="r83-wx-hEi" secondAttribute="bottom" id="nQb-4V-1Y7"/>
+                            <constraint firstItem="Zz2-TR-Y4U" firstAttribute="top" secondItem="r83-wx-hEi" secondAttribute="bottom" constant="20" id="nQb-4V-1Y7"/>
                             <constraint firstItem="Zz2-TR-Y4U" firstAttribute="trailing" secondItem="nAU-P7-0qt" secondAttribute="trailing" id="pWM-5Y-gtA"/>
                             <constraint firstItem="BZL-CP-NKV" firstAttribute="trailing" secondItem="nAU-P7-0qt" secondAttribute="trailing" id="qSx-xA-QBl"/>
                             <constraint firstItem="r83-wx-hEi" firstAttribute="leading" secondItem="nAU-P7-0qt" secondAttribute="leading" constant="16" id="rPS-U7-KAI"/>
@@ -115,7 +118,7 @@
                         <outlet property="live" destination="qTj-vN-Rq5" id="wGP-fA-sil"/>
                         <outlet property="more" destination="FAG-D6-XQk" id="DFr-YK-H9c"/>
                         <outlet property="search" destination="WYO-si-Nio" id="X2X-6P-Z70"/>
-                        <outlet property="searchBar" destination="Zz2-TR-Y4U" id="HM1-uP-Xg9"/>
+                        <outlet property="searchBar" destination="Zz2-TR-Y4U" id="kTs-qf-IXe"/>
                         <outlet property="tableView" destination="JPG-97-T9B" id="b2a-sc-jiu"/>
                     </connections>
                 </viewController>
